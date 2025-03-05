@@ -6,3 +6,5 @@ Progress seems to suggest that width is relevant (model 40,10,10,5,10) perfromed
 
 03/03/2025, 10:50 - models seem to be performing surprisingly well (need to run default train/eval loop to guarantee this) as im cranking up the grid_size, thinner model architectures seem to outperform 
 wide model architectures when given enough grid_size (model 40,20,10,10 with grid_size = 25) 
+
+05/03/2025, 19:19 - applied a change to the way in which outliers are treated and ended up penalizing the model since it was getting a lot of data leakage, need to attempt perhaps data impuation using knn imputer

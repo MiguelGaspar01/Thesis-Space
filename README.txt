@@ -10,3 +10,5 @@ wide model architectures when given enough grid_size (model 40,20,10,10 with gri
 05/03/2025, 19:19 - applied a change to the way in which outliers are treated and ended up penalizing the model since it was getting a lot of data leakage, need to attempt perhaps data impuation using knn imputer
 
 05/03/2025, 23:08 - changed to adasyn and winsorizing outliers // the models seem to be training more linearly, slower, perhaps they might get stuck in lower accuracy intervals  (accuracy can be achieved by going back to original outlier treatment and perhaps smote+een although adasyn is better for balance
+
+09/03/2023, 9:59 - no outlier treatment necessary, data preprocessment looks like, dropping irrelevant column, changing value of is_log_ifp, treating categorical outliers, one hot encoding, log1p transformation, quantile transformer, standard scaler, minmax scaler
